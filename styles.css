@@ -1,1 +1,75 @@
+body {
+    background-color: #fff0f5;
+    font-family: 'Quicksand', sans-serif;
+    color: #444;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #d63384;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.malla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.materia {
+    background-color: #ffc0cb;
+    color: #d63384;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(214, 51, 132, 0.15);
+    font-weight: 600;
+}
+
+.materia:hover {
+    background-color: #f9a1bb;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(214, 51, 132, 0.3);
+}
+
+.materia.aprobada {
+    background-color: #d63384;
+    color: #fff;
+    text-decoration: line-through;
+    box-shadow: 0 4px 10px rgba(214, 51, 132, 0.4);
+    transform: scale(1);
+}
+
+.materia:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.reset {
+    background-color: transparent;
+    border: 2px solid #d63384;
+    color: #d63384;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(214, 51, 132, 0.1);
+}
+
+.reset:hover {
+    background-color: #d63384;
+    color: white;
+    box-shadow: 0 6px 12px rgba(214, 51, 132, 0.3);
+}
 
