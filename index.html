@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Malla Interactiva - Educación Gerencia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Malla Interactiva Educación Gerencia</h1>
+    <div class="malla">
+        <button class="materia" data-id="logica">Lógica Básica</button>
+        <button class="materia" data-id="psicologia" data-requires="logica">Psicología General y del Aprendizaje</button>
+        <button class="materia" data-id="evaluacion" data-requires="psicologia">Evaluación</button>
+        <button class="materia" data-id="gestion" data-requires="evaluacion">Gestión de la Calidad Educativa</button>
+        <button class="materia" data-id="capital" data-requires="gestion">Gestión del Capital Humano</button>
+        <button class="materia" data-id="especial" data-requires="capital">Introducción a la Educación Especial</button>
+        <button class="materia" data-id="asesoramiento" data-requires="especial">Asesoramiento Vocacional y Familiar</button>
+        <button class="materia" data-id="metodologia" data-requires="evaluacion">Metodología de la Investigación Educativa</button>
+        <button class="materia" data-id="grupos" data-requires="metodologia">Dinámica de Grupos</button>
+        <button class="materia" data-id="venezuela" data-requires="grupos">Venezuela: Identidad y Contexto</button>
+    </div>
+    <button class="reset">Resetear Malla</button>
 
+    <script src="script.js"></script>
+</body>
+</html>
